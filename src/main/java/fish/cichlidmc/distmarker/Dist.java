@@ -1,4 +1,4 @@
-package io.github.cichlidmc.distmarker;
+package fish.cichlidmc.distmarker;
 
 /**
  * The available distributions of Minecraft.

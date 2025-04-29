@@ -3,8 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-base.archivesName = "DistributionMarker"
-group = "io.github.cichlidmc"
+group = "fish.cichlidmc"
 version = "1.0.1"
 
 repositories {
@@ -23,9 +22,11 @@ publishing {
     }
 
     repositories {
-        maven("https://mvn.devos.one/snapshots") {
-            name = "devOS"
-            credentials(PasswordCredentials::class)
+        listOf("Releases", "Snapshots").forEach {
+            maven("https://mvn.devos.one/${it.lowercase()}") {
+                name = "devOs$it"
+                credentials(PasswordCredentials::class)
+            }
         }
     }
 }

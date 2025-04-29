@@ -1,4 +1,4 @@
-package io.github.cichlidmc.distmarker;
+package fish.cichlidmc.distmarker;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -1,1 +1,1 @@
-rootProject.name = "DistributionMarker"
+rootProject.name = "distribution-marker"
